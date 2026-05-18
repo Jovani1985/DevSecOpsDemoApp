@@ -13,5 +13,12 @@ pipeline {
                 checkout scm
             }
         }
+
+        stage('Build') {
+            steps {
+                echo 'Building Docker image...'
+                bat 'docker build -t %APP_NAME%:%IMAGE_TAG% .'
+            }
+        }
     }
 }
