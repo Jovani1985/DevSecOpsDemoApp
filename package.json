@@ -1,0 +1,12 @@
+{
+  "name": "devsecopsdemoapp",
+  "version": "1.0.0",
+  "description": "Minimal Node.js app for Jenkins DevOps pipeline assessment",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --runInBand"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
