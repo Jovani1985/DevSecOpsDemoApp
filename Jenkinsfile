@@ -7,6 +7,7 @@ pipeline {
     }
 
     stages {
+
         stage('Checkout') {
             steps {
                 echo 'Checking out source code...'
@@ -19,6 +20,13 @@ pipeline {
                 echo 'Installing dependencies and running tests...'
                 bat 'npm install'
                 bat 'npm test'
+            }
+        }
+
+        stage('Code Quality') {
+            steps {
+                echo 'Running ESLint code quality checks...'
+                bat 'npx eslint .'
             }
         }
 
