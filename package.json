@@ -4,9 +4,11 @@
   "description": "Minimal Node.js app for Jenkins DevOps pipeline assessment",
   "main": "app.js",
   "scripts": {
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "lint": "eslint ."
   },
   "devDependencies": {
+    "eslint": "^9.0.0",
     "jest": "^29.7.0"
   }
 }
