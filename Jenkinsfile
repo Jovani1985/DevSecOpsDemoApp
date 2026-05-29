@@ -30,6 +30,13 @@ pipeline {
             }
         }
 
+        stage('Security') {
+            steps {
+                echo 'Running security scan...'
+                bat 'npm audit'
+            }
+        }
+
         stage('Build') {
             steps {
                 echo 'Building Docker image...'
