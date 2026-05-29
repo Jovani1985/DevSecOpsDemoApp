@@ -1,13 +1,13 @@
 module.exports = [
   {
-    files: ["**/*.js"],
+    files: ['**/*.js'],
     languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "commonjs"
+      ecmaVersion: 'latest',
+      sourceType: 'commonjs'
     },
     rules: {
-      semi: ["error", "always"],
-      quotes: ["error", "single"]
+      semi: ['error', 'always'],
+      quotes: ['error', 'single']
     }
   }
 ];
